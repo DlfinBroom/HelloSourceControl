@@ -20,8 +20,13 @@ namespace HelloSourceControl {
             Close();
         }
 
-        private void btnChangeText_Click(object sender, EventArgs e) {
-            tbxHelloWorld.Text = "Text was changed";
+        private void cbxHelloThere_CheckedChanged(object sender, EventArgs e) {
+            if(cbxHelloThere.Checked == true) {
+                tbxHelloWorld.Text = "Hello There";
+            }
+            else {
+                tbxHelloWorld.Text = "Goodbye";
+            }
         }
     }
 }
