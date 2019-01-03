@@ -19,5 +19,9 @@ namespace HelloSourceControl {
         private void btnClose_Click(object sender, EventArgs e) {
             Close();
         }
+
+        private void btnChangeText_Click(object sender, EventArgs e) {
+            tbxHelloWorld.Text = "Text was changed";
+        }
     }
 }

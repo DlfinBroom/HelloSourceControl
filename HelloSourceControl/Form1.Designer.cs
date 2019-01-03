@@ -25,6 +25,7 @@
         private void InitializeComponent() {
             this.tbxHelloWorld = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
+            this.btnChangeText = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbxHelloWorld
@@ -45,11 +46,22 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // btnChangeText
+            // 
+            this.btnChangeText.Location = new System.Drawing.Point(13, 37);
+            this.btnChangeText.Name = "btnChangeText";
+            this.btnChangeText.Size = new System.Drawing.Size(136, 23);
+            this.btnChangeText.TabIndex = 2;
+            this.btnChangeText.Text = "Change Text";
+            this.btnChangeText.UseVisualStyleBackColor = true;
+            this.btnChangeText.Click += new System.EventHandler(this.btnChangeText_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(261, 72);
+            this.Controls.Add(this.btnChangeText);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.tbxHelloWorld);
             this.Name = "Form1";
@@ -63,6 +75,7 @@
 
         private System.Windows.Forms.TextBox tbxHelloWorld;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Button btnChangeText;
     }
 }
 
