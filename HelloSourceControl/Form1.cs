@@ -29,14 +29,11 @@ namespace HelloSourceControl {
             }
         }
 
-        private void cbxHey_CheckedChanged(object sender, EventArgs e)
-        {
-            if (cbxHey.Checked == true)
-            {
+        private void cbxHey_CheckedChanged(object sender, EventArgs e) {
+            if (cbxHey.Checked == true) {
                 tbxHelloWorld.Text = "Hey";
             }
-            else
-            {
+            else {
                 tbxHelloWorld.Text = "bye";
             }
         }
