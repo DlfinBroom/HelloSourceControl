@@ -28,5 +28,17 @@ namespace HelloSourceControl {
                 tbxHelloWorld.Text = "Goodbye";
             }
         }
+
+        private void cbxHey_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbxHey.Checked == true)
+            {
+                tbxHelloWorld.Text = "Hey";
+            }
+            else
+            {
+                tbxHelloWorld.Text = "bye";
+            }
+        }
     }
 }

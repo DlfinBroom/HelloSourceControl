@@ -26,6 +26,7 @@
             this.tbxHelloWorld = new System.Windows.Forms.TextBox();
             this.btnClose = new System.Windows.Forms.Button();
             this.cbxHelloThere = new System.Windows.Forms.CheckBox();
+            this.cbxHey = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // tbxHelloWorld
@@ -57,11 +58,23 @@
             this.cbxHelloThere.UseVisualStyleBackColor = true;
             this.cbxHelloThere.CheckedChanged += new System.EventHandler(this.cbxHelloThere_CheckedChanged);
             // 
+            // cbxHey
+            // 
+            this.cbxHey.AutoSize = true;
+            this.cbxHey.Location = new System.Drawing.Point(12, 62);
+            this.cbxHey.Name = "cbxHey";
+            this.cbxHey.Size = new System.Drawing.Size(45, 17);
+            this.cbxHey.TabIndex = 3;
+            this.cbxHey.Text = "Hey";
+            this.cbxHey.UseVisualStyleBackColor = true;
+            this.cbxHey.CheckedChanged += new System.EventHandler(this.cbxHey_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(187, 74);
+            this.ClientSize = new System.Drawing.Size(187, 87);
+            this.Controls.Add(this.cbxHey);
             this.Controls.Add(this.cbxHelloThere);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.tbxHelloWorld);
@@ -77,6 +90,7 @@
         private System.Windows.Forms.TextBox tbxHelloWorld;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.CheckBox cbxHelloThere;
+        private System.Windows.Forms.CheckBox cbxHey;
     }
 }
 
